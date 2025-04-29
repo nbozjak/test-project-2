@@ -43,8 +43,7 @@ nano ./hello.sh
 #!/bin/bash
 echo "Hello from $(hostname)"
 
-
-#Save
+##Save
 
 
 
@@ -54,7 +53,7 @@ sudo apt install -y ansible
 ansible --version
 ansible-playbook -i inventory.ini test/deploy_hello.yml
 
-#  mc make directory /root/ansible/project
+##  mc make directory /root/ansible/project
 # Go to your project folder
 cd /root/ansible/project
 nano inventory.ini
@@ -62,11 +61,11 @@ nano inventory.ini
 [local]
 127.0.0.1 ansible_connection=local
 
-# Test
+## Test
 ansible -i inventory.ini local -m ping
 
 
-# Create the test sub-directory
+## Create the test sub-directory
 mkdir -p test
 cat > test/deploy_hello.yml
 
@@ -111,9 +110,9 @@ EOF
 cat > README.md << 'EOF'
 # Ansible + Oracle Linux Docker Hello Script
 
-## Layout
 
-# Save
+
+## Save
 
 # Test
 
