@@ -106,12 +106,6 @@ nano deploy_hello.yml
         var: hello_result.stdout_lines
 EOF
 
-# 5. (Optional) Create a README.md
-cat > README.md << 'EOF'
-# Ansible + Oracle Linux Docker Hello Script
-
-
-
 ## Save
 
 # Test
